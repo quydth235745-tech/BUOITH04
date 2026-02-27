@@ -60,10 +60,11 @@ namespace QuanLyBanHang
             {
                 // Giả sử các cột của bạn theo thứ tự trong Designer
                 // Bạn nên đặt lại DataPropertyName cho từng cột trong Designer hoặc dùng code:
-                dataGridView.Columns[0].DataPropertyName = "TenSanPham";
-                dataGridView.Columns[1].DataPropertyName = "DonGiaBan";
-                dataGridView.Columns[2].DataPropertyName = "SoLuongBan";
-                dataGridView.Columns[3].DataPropertyName = "ThanhTien";
+                dataGridView.Columns[0].DataPropertyName = "SanPhamID";  // Cột ID
+                dataGridView.Columns[1].DataPropertyName = "TenSanPham"; // Cột Tên sản phẩm
+                dataGridView.Columns[2].DataPropertyName = "DonGiaBan";  // Cột Đơn giá
+                dataGridView.Columns[3].DataPropertyName = "SoLuongBan"; // Cột Số lượng
+                dataGridView.Columns[4].DataPropertyName = "ThanhTien";
             }
 
             // 3. Load dữ liệu cũ nếu là chế độ Sửa
@@ -235,7 +236,7 @@ namespace QuanLyBanHang
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }
