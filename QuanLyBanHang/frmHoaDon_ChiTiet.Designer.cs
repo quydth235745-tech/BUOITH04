@@ -307,6 +307,7 @@
             btnThoat.TabIndex = 17;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;
+            btnThoat.Click += btnThoat_Click;
             // 
             // frmHoaDon_ChiTiet
             // 

@@ -21,7 +21,7 @@ namespace QuanLyBanHang
         QLBHDbContext context = new QLBHDbContext(); // Khởi tạo biến ngữ cảnh CSDL
         int id; // Lấy mã hóa đơn (dùng cho Sửa và Xóa)
         BindingList<DanhSachHoaDon_ChiTiet> hoaDonChiTiet = new BindingList<DanhSachHoaDon_ChiTiet>();
-       
+
         public void BatTatChucNang()
         {
             if (id == 0 && dataGridView.Rows.Count == 0) // Thêm
@@ -231,6 +231,11 @@ namespace QuanLyBanHang
                     numDonGia.Value = chiTiet.DonGiaBan;
                 }
             }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
